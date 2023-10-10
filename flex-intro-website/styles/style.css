@@ -23,9 +23,14 @@ a {
   padding: 0.8em 0;
 }
 
-.main-nav {
+.main-nav .menu {
   display: flex;
   gap: 15px;
+  padding-left: 0;
+  list-style: none;
+}
+.sub-menu {
+  display: none;
 }
 .nav-item {
   padding-top: 15px;
@@ -41,10 +46,12 @@ a {
 }
 
 aside {
+  padding: 1em;
   background-color: rgba(255, 99, 71, 0.281);
 }
 
 main {
+  padding: 1em;
   min-width: calc(100% - 290px);
   background-color: rgba(0, 0, 255, 0.331);
 }
