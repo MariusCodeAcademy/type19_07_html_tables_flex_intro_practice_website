@@ -3,5 +3,50 @@
 }
 
 body {
+  margin: 0;
   background-color: #e4e4e4;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* table */
+.table-container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.main-table {
+  width: 100%;
+  /* border-spacing: 10px; */
+  border-collapse: collapse;
+  /* visi stulpeliai vienodo plocio */
+  /* table-layout: fixed; */
+}
+
+thead tr {
+  background-color: #36304a;
+  color: white;
+}
+
+tr {
+  background-color: #fff;
+}
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+th {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+}
+td {
+  color: gray;
+}
+th,
+td {
+  /* border: 1px solid #000; */
+  padding: 0.9em 0.8em;
+}
+.name-th {
+  width: 35%;
 }
