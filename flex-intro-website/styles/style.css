@@ -28,9 +28,24 @@ a {
   gap: 15px;
   padding-left: 0;
   list-style: none;
+  align-items: center;
+}
+.has-children {
+  position: relative;
+  padding-right: 15px;
 }
 .sub-menu {
+  top: calc(100% + 25px);
   display: none;
+  position: absolute;
+  background-color: #fff;
+  line-height: 1.5;
+  padding: 0.4em;
+  min-width: 120px;
+  list-style: none;
+}
+.has-children:hover .sub-menu {
+  display: block;
 }
 .nav-item {
   padding-top: 15px;
