@@ -2,17 +2,40 @@
   box-sizing: border-box;
 }
 
+.box {
+  display: none;
+  margin-left: 50px;
+  width: 250px;
+  height: 150px;
+  border: 1px solid #000;
+  overflow: auto;
+}
+
 body {
+  /* dokumentas uzima maziausiai 100% ekrano aukscio */
+  min-height: 100vh;
   margin: 0;
   background-color: #e4e4e4;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.gradient {
+  background-image: linear-gradient(to top right, #4158d0, #c850c0);
+  /* background-repeat: no-repeat; */
 }
 
 /* table */
 .table-container {
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 50px;
 }
 .main-table {
   width: 100%;
@@ -20,6 +43,8 @@ body {
   border-collapse: collapse;
   /* visi stulpeliai vienodo plocio */
   /* table-layout: fixed; */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 thead tr {
@@ -32,6 +57,9 @@ tr {
 }
 tbody tr:nth-child(even) {
   background-color: #f5f5f5;
+}
+tbody tr:hover {
+  background-color: #cfcfcf;
 }
 
 th {
